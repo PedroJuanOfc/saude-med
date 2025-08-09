@@ -4,33 +4,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saúde Med - Clínica Popular</title>
+  <meta name="description" content="Saúde Med — Clínica Popular em Brasília. Consultas acessíveis e atendimento humanizado em Dermatologia, Endocrinologia, Ginecologia/Obstetrícia, Ultrassonografia, Medicina do Trabalho e mais.">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="font-sans">
+<body class="font-sans text-slate-800">
+
+  <!-- Topbar (telefone + horários) -->
+  <div class="w-full bg-[#0d3b66] text-white text-sm">
+    <div class="mx-auto max-w-6xl px-4 py-2 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V21a1 1 0 01-1 1C10.07 22 2 13.93 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          (61) 3201-1777
+        </span>
+        <span class="hidden md:inline-block h-4 w-px bg-white/30"></span>
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 8a1 1 0 011 1v3.382l2.447 1.633a1 1 0 11-1.11 1.664l-3-2A1 1 0 0111 13V9a1 1 0 011-1z"/><path fill-rule="evenodd" d="M12 22a10 10 0 100-20 10 10 0 000 20zm0-2a8 8 0 110-16 8 8 0 010 16z" clip-rule="evenodd"/></svg>
+          Seg–Sex: 07h às 18h • Sáb: 07h às 12h
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar fixa -->
+  <header id="main-nav" class="sticky top-0 z-40 bg-white/70">
+    <nav class="mx-auto max-w-6xl px-4">
+      <div class="flex items-center justify-between py-3">
+        <a href="#" class="text-2xl md:text-3xl font-extrabold tracking-wide text-[#0d3b66]">
+          Saúde <span class="text-emerald-600">Med</span>
+        </a>
+        <ul class="hidden md:flex items-center gap-6 font-medium text-slate-700">
+          <li><a href="#sobre-nos" class="hover:text-[#0d3b66] transition">Sobre nós</a></li>
+          <li><a href="#especialidades" class="hover:text-[#0d3b66] transition">Especialidades</a></li>
+          <li><a href="#profissionais" class="hover:text-[#0d3b66] transition">Profissionais</a></li>
+          <li><a href="#artigos" class="hover:text-[#0d3b66] transition">Artigos</a></li>
+          <li><a href="#localizacao" class="hover:text-[#0d3b66] transition">Localização</a></li>
+          <li><a href="#contato" class="hover:text-[#0d3b66] transition">Contato</a></li>
+        </ul>
+        <button id="menu-btn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg ring-1 ring-slate-200">
+          <span class="sr-only">Abrir menu</span>
+          <svg id="menu-icon" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden pb-4">
+        <ul class="flex flex-col gap-2 text-slate-700 font-medium">
+          <li><a href="#sobre-nos" class="block px-2 py-2 rounded hover:bg-slate-100">Sobre nós</a></li>
+          <li><a href="#especialidades" class="block px-2 py-2 rounded hover:bg-slate-100">Especialidades</a></li>
+          <li><a href="#profissionais" class="block px-2 py-2 rounded hover:bg-slate-100">Profissionais</a></li>
+          <li><a href="#artigos" class="block px-2 py-2 rounded hover:bg-slate-100">Artigos</a></li>
+          <li><a href="#localizacao" class="block px-2 py-2 rounded hover:bg-slate-100">Localização</a></li>
+          <li><a href="#contato" class="block px-2 py-2 rounded hover:bg-slate-100">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <!-- Hero -->
-  <section id="hero"></section>
+  <section id="hero" class="relative min-h-[70vh] flex items-center">
+    <div class="absolute inset-0">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.YTPAwbn3gouBPawSAgpR3wHaEJ?pid=Api"
+           alt="Clínica Saúde Med"
+           class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+    <div class="relative mx-auto w-full max-w-6xl px-4">
+      <div class="max-w-xl text-white" data-aos="fade-up">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-wide leading-tight">
+          Saúde Med
+        </h1>
+        <p class="mt-2 text-lg md:text-xl font-light">
+          Clínica Popular em Brasília — atendimento humanizado e acessível.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+uma+consulta+na+Sa%C3%BAde+Med."
+             target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center rounded-xl bg-emerald-500 px-6 py-3 text-base font-semibold text-white hover:bg-emerald-600 transition">
+            Agendar consulta
+          </a>
+          <a href="#especialidades"
+             class="inline-flex items-center justify-center rounded-xl bg-white/10 backdrop-blur px-6 py-3 text-base font-semibold text-white ring-1 ring-white/30 hover:bg-white/20 transition">
+            Ver especialidades
+          </a>
+        </div>
+        <div class="mt-6 text-sm text-white/80">
+          <p><strong>Telefone:</strong> (61) 3201-1777</p>
+          <p><strong>Endereço:</strong> SCN Quadra 1 Bloco E, Ed. Central Park, Sala 209 — Asa Norte</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Sobre nós -->
   <section id="sobre-nos"></section>
-
-  <!-- Especialidades -->
   <section id="especialidades"></section>
-
-  <!-- Nossos profissionais -->
   <section id="profissionais"></section>
-
-  <!-- Últimos artigos -->
   <section id="artigos"></section>
-
-  <!-- Localização -->
   <section id="localizacao"></section>
-
-  <!-- Footer -->
   <footer id="contato"></footer>
 
-  <!-- Botão WhatsApp flutuante -->
-  <div id="whatsapp-button"></div>
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+uma+consulta+na+Sa%C3%BAde+Med."
+     target="_blank" rel="noopener"
+     id="whatsapp-btn"
+     class="fixed bottom-5 right-5 z-50">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp"
+         class="w-14 h-14 rounded-full shadow-lg">
+  </a>
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
