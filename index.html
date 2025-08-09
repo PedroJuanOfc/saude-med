@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="font-sans text-slate-800">
-
   <!-- Topbar (telefone + horários) -->
   <div class="w-full bg-[#0d3b66] text-white text-sm">
     <div class="mx-auto max-w-6xl px-4 py-2 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
@@ -127,153 +126,149 @@
     </div>
   </section>
 
-
   <!-- ESPECIALIDADES -->
-  <section id="especialidades" class="py-16">
+  <section id="especialidades" class="py-16 bg-slate-50">
     <div class="max-w-6xl mx-auto px-4">
       <div class="mb-10 text-center" data-aos="fade-up">
-        <h2 class="text-3xl font-extrabold text-[#0d3b66]">Especialidades</h2>
+        <h2 class="text-3xl font-extrabold text-emerald-700">Especialidades</h2>
         <p class="mt-2 text-slate-600">Atendimento acessível em diversas áreas, com foco em cuidado humano.</p>
       </div>
 
-      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-        <!-- Card base: copiar e trocar título/descrição/link/img -->
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
         <!-- Clínica Médica -->
-        <article class="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition flex flex-col overflow-hidden" data-aos="fade-up">
-          <div class="h-36 w-full overflow-hidden">
-            <img src="https://picsum.photos/seed/clinica/600/400" alt="Clínica Médica" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5 flex flex-col gap-3 grow">
-            <h3 class="text-lg font-semibold text-slate-900">Clínica Médica</h3>
-            <p class="text-sm text-slate-600 grow">Consultas gerais, prevenção e acompanhamento contínuo.</p>
-            <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+Cl%C3%ADnica+M%C3%A9dica+na+Sa%C3%BAde+Med."
-              target="_blank" rel="noopener"
-              class="mt-auto inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-white text-sm font-semibold hover:bg-emerald-600 transition">
-              Detalhes
-            </a>
+        <article class="relative rounded-2xl overflow-hidden group shadow-sm ring-1 ring-slate-200/50" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/clinica/800/600" alt="Clínica Médica" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-emerald-700 bg-opacity-80"></div>
+          <div class="absolute inset-0 p-5 text-white flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold">Clínica Médica</h3>
+              <p class="mt-1 text-sm text-white/90">Consultas gerais, prevenção e acompanhamento contínuo.</p>
+            </div>
+            <a href="https://wa.me/556132011777?text=Ol%C3%A1,+quero+agendar+Cl%C3%ADnica+M%C3%A9dica" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold hover:bg-emerald-600 transition">Agendar</a>
           </div>
         </article>
 
         <!-- Acupuntura -->
-        <article class="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition flex flex-col overflow-hidden" data-aos="fade-up" data-aos-delay="50">
-          <div class="h-36 w-full overflow-hidden">
-            <img src="https://picsum.photos/seed/acupuntura/600/400" alt="Acupuntura" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5 flex flex-col gap-3 grow">
-            <h3 class="text-lg font-semibold text-slate-900">Acupuntura</h3>
-            <p class="text-sm text-slate-600 grow">Terapia complementar para dor, estresse e bem-estar.</p>
-            <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+Acupuntura+na+Sa%C3%BAde+Med." target="_blank" rel="noopener"
-              class="mt-auto inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-white text-sm font-semibold hover:bg-emerald-600 transition">Detalhes</a>
+        <article class="relative rounded-2xl overflow-hidden group shadow-sm ring-1 ring-slate-200/50" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/acupuntura/800/600" alt="Acupuntura" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-emerald-700 bg-opacity-80"></div>
+          <div class="absolute inset-0 p-5 text-white flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold">Acupuntura</h3>
+              <p class="mt-1 text-sm text-white/90">Terapia complementar para dor, estresse e bem-estar.</p>
+            </div>
+            <a href="https://wa.me/556132011777?text=Ol%C3%A1,+quero+agendar+Acupuntura" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold hover:bg-emerald-600 transition">Agendar</a>
           </div>
         </article>
 
         <!-- Dermatologista -->
-        <article class="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition flex flex-col overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-          <div class="h-36 w-full overflow-hidden">
-            <img src="https://picsum.photos/seed/dermato/600/400" alt="Dermatologista" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5 flex flex-col gap-3 grow">
-            <h3 class="text-lg font-semibold text-slate-900">Dermatologista</h3>
-            <p class="text-sm text-slate-600 grow">Pele, cabelo e unhas: diagnóstico e tratamento.</p>
-            <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+Dermatologista+na+Sa%C3%BAde+Med." target="_blank" rel="noopener"
-              class="mt-auto inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-white text-sm font-semibold hover:bg-emerald-600 transition">Detalhes</a>
+        <article class="relative rounded-2xl overflow-hidden group shadow-sm ring-1 ring-slate-200/50" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/dermato/800/600" alt="Dermatologista" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-emerald-700 bg-opacity-80"></div>
+          <div class="absolute inset-0 p-5 text-white flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold">Dermatologista</h3>
+              <p class="mt-1 text-sm text-white/90">Pele, cabelo e unhas: diagnóstico e tratamento.</p>
+            </div>
+            <a href="https://wa.me/556132011777?text=Ol%C3%A1,+quero+agendar+Dermatologista" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold hover:bg-emerald-600 transition">Agendar</a>
           </div>
         </article>
 
         <!-- Endocrinologista -->
-        <article class="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition flex flex-col overflow-hidden" data-aos="fade-up" data-aos-delay="150">
-          <div class="h-36 w-full overflow-hidden">
-            <img src="https://picsum.photos/seed/endo/600/400" alt="Endocrinologista" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5 flex flex-col gap-3 grow">
-            <h3 class="text-lg font-semibold text-slate-900">Endocrinologista</h3>
-            <p class="text-sm text-slate-600 grow">Diabetes, tireoide, metabolismo e hormônios.</p>
-            <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+Endocrinologista+na+Sa%C3%BAde+Med." target="_blank" rel="noopener"
-              class="mt-auto inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-white text-sm font-semibold hover:bg-emerald-600 transition">Detalhes</a>
+        <article class="relative rounded-2xl overflow-hidden group shadow-sm ring-1 ring-slate-200/50" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/endocrino/800/600" alt="Endocrinologista" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-emerald-700 bg-opacity-80"></div>
+          <div class="absolute inset-0 p-5 text-white flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold">Endocrinologista</h3>
+              <p class="mt-1 text-sm text-white/90">Diabetes, tireoide, metabolismo e hormônios.</p>
+            </div>
+            <a href="https://wa.me/556132011777?text=Ol%C3%A1,+quero+agendar+Endocrinologista" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold hover:bg-emerald-600 transition">Agendar</a>
           </div>
         </article>
 
-        <!-- Medicina estética -->
-        <article class="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition flex flex-col overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-          <div class="h-36 w-full overflow-hidden">
-            <img src="https://picsum.photos/seed/estetica/600/400" alt="Medicina estética" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5 flex flex-col gap-3 grow">
-            <h3 class="text-lg font-semibold text-slate-900">Medicina estética</h3>
-            <p class="text-sm text-slate-600 grow">Procedimentos minimamente invasivos e cuidados com a pele.</p>
-            <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+Medicina+est%C3%A9tica+na+Sa%C3%BAde+Med." target="_blank" rel="noopener"
-              class="mt-auto inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-white text-sm font-semibold hover:bg-emerald-600 transition">Detalhes</a>
+        <!-- Medicina Estética -->
+        <article class="relative rounded-2xl overflow-hidden group shadow-sm ring-1 ring-slate-200/50" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/estetica/800/600" alt="Medicina Estética" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-emerald-700 bg-opacity-80"></div>
+          <div class="absolute inset-0 p-5 text-white flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold">Medicina Estética</h3>
+              <p class="mt-1 text-sm text-white/90">Procedimentos minimamente invasivos e cuidados com a pele.</p>
+            </div>
+            <a href="https://wa.me/556132011777?text=Ol%C3%A1,+quero+agendar+Medicina+Est%C3%A9tica" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold hover:bg-emerald-600 transition">Agendar</a>
           </div>
         </article>
 
         <!-- Ginecologista/Obstetra -->
-        <article class="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition flex flex-col overflow-hidden" data-aos="fade-up">
-          <div class="h-36 w-full overflow-hidden">
-            <img src="https://picsum.photos/seed/gineco/600/400" alt="Ginecologia/Obstetrícia" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5 flex flex-col gap-3 grow">
-            <h3 class="text-lg font-semibold text-slate-900">Ginecologista/Obstetra</h3>
-            <p class="text-sm text-slate-600 grow">Saúde da mulher, pré-natal e planejamento reprodutivo.</p>
-            <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+Ginecologista%2FObstetra+na+Sa%C3%BAde+Med." target="_blank" rel="noopener"
-              class="mt-auto inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-white text-sm font-semibold hover:bg-emerald-600 transition">Detalhes</a>
+        <article class="relative rounded-2xl overflow-hidden group shadow-sm ring-1 ring-slate-200/50" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/gineco/800/600" alt="Ginecologista/Obstetra" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-emerald-700 bg-opacity-80"></div>
+          <div class="absolute inset-0 p-5 text-white flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold">Ginecologista/Obstetra</h3>
+              <p class="mt-1 text-sm text-white/90">Saúde da mulher, pré-natal e planejamento reprodutivo.</p>
+            </div>
+            <a href="https://wa.me/556132011777?text=Ol%C3%A1,+quero+agendar+Ginecologista" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold hover:bg-emerald-600 transition">Agendar</a>
           </div>
         </article>
 
         <!-- Ultrassonografia -->
-        <article class="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition flex flex-col overflow-hidden" data-aos="fade-up" data-aos-delay="50">
-          <div class="h-36 w-full overflow-hidden">
-            <img src="https://picsum.photos/seed/ultra/600/400" alt="Ultrassonografia" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5 flex flex-col gap-3 grow">
-            <h3 class="text-lg font-semibold text-slate-900">Ultrassonografia</h3>
-            <p class="text-sm text-slate-600 grow">Exames de imagem com laudos ágeis e precisos.</p>
-            <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+Ultrassonografia+na+Sa%C3%BAde+Med." target="_blank" rel="noopener"
-              class="mt-auto inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-white text-sm font-semibold hover:bg-emerald-600 transition">Detalhes</a>
+        <article class="relative rounded-2xl overflow-hidden group shadow-sm ring-1 ring-slate-200/50" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/ultrassom/800/600" alt="Ultrassonografia" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-emerald-700 bg-opacity-80"></div>
+          <div class="absolute inset-0 p-5 text-white flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold">Ultrassonografia</h3>
+              <p class="mt-1 text-sm text-white/90">Exames de imagem com laudos ágeis e precisos.</p>
+            </div>
+            <a href="https://wa.me/556132011777?text=Ol%C3%A1,+quero+agendar+Ultrassonografia" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold hover:bg-emerald-600 transition">Agendar</a>
           </div>
         </article>
 
-        <!-- Pequenas cirurgias -->
-        <article class="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition flex flex-col overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-          <div class="h-36 w-full overflow-hidden">
-            <img src="https://picsum.photos/seed/cirurgia/600/400" alt="Pequenas cirurgias" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5 flex flex-col gap-3 grow">
-            <h3 class="text-lg font-semibold text-slate-900">Pequenas cirurgias</h3>
-            <p class="text-sm text-slate-600 grow">Procedimentos ambulatoriais com segurança e cuidado.</p>
-            <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+Pequenas+cirurgias+na+Sa%C3%BAde+Med." target="_blank" rel="noopener"
-              class="mt-auto inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-white text-sm font-semibold hover:bg-emerald-600 transition">Detalhes</a>
+        <!-- Pequenas Cirurgias -->
+        <article class="relative rounded-2xl overflow-hidden group shadow-sm ring-1 ring-slate-200/50" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/cirurgia/800/600" alt="Pequenas Cirurgias" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-emerald-700 bg-opacity-80"></div>
+          <div class="absolute inset-0 p-5 text-white flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold">Pequenas Cirurgias</h3>
+              <p class="mt-1 text-sm text-white/90">Procedimentos ambulatoriais com segurança e cuidado.</p>
+            </div>
+            <a href="https://wa.me/556132011777?text=Ol%C3%A1,+quero+agendar+Pequenas+Cirurgias" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold hover:bg-emerald-600 transition">Agendar</a>
           </div>
         </article>
 
         <!-- Quiropraxia -->
-        <article class="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition flex flex-col overflow-hidden" data-aos="fade-up" data-aos-delay="150">
-          <div class="h-36 w-full overflow-hidden">
-            <img src="https://picsum.photos/seed/quiropraxia/600/400" alt="Quiropraxia" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5 flex flex-col gap-3 grow">
-            <h3 class="text-lg font-semibold text-slate-900">Quiropraxia</h3>
-            <p class="text-sm text-slate-600 grow">Coluna e articulações: alívio de dores e ajustes posturais.</p>
-            <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+Quiropraxia+na+Sa%C3%BAde+Med." target="_blank" rel="noopener"
-              class="mt-auto inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-white text-sm font-semibold hover:bg-emerald-600 transition">Detalhes</a>
+        <article class="relative rounded-2xl overflow-hidden group shadow-sm ring-1 ring-slate-200/50" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/quiropraxia/800/600" alt="Quiropraxia" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-emerald-700 bg-opacity-80"></div>
+          <div class="absolute inset-0 p-5 text-white flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold">Quiropraxia</h3>
+              <p class="mt-1 text-sm text-white/90">Coluna e articulações: alívio de dores e correções posturais.</p>
+            </div>
+            <a href="https://wa.me/556132011777?text=Ol%C3%A1,+quero+agendar+Quiropraxia" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold hover:bg-emerald-600 transition">Agendar</a>
           </div>
         </article>
 
-        <!-- Medicina do trabalho -->
-        <article class="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition flex flex-col overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-          <div class="h-36 w-full overflow-hidden">
-            <img src="https://picsum.photos/seed/trabalho/600/400" alt="Medicina do trabalho" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-          </div>
-          <div class="p-5 flex flex-col gap-3 grow">
-            <h3 class="text-lg font-semibold text-slate-900">Medicina do trabalho</h3>
-            <p class="text-sm text-slate-600 grow">Exames ocupacionais e programas de saúde corporativa.</p>
-            <a href="https://wa.me/556132011777?text=Ol%C3%A1%2C+quero+agendar+Medicina+do+trabalho+na+Sa%C3%BAde+Med." target="_blank" rel="noopener"
-              class="mt-auto inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-white text-sm font-semibold hover:bg-emerald-600 transition">Detalhes</a>
+        <!-- Medicina do Trabalho -->
+        <article class="relative rounded-2xl overflow-hidden group shadow-sm ring-1 ring-slate-200/50" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/trabalho/800/600" alt="Medicina do Trabalho" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-0 bg-emerald-700 bg-opacity-80"></div>
+          <div class="absolute inset-0 p-5 text-white flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-semibold">Medicina do Trabalho</h3>
+              <p class="mt-1 text-sm text-white/90">Exames ocupacionais e programas de saúde corporativa.</p>
+            </div>
+            <a href="https://wa.me/556132011777?text=Ol%C3%A1,+quero+agendar+Medicina+do+Trabalho" target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold hover:bg-emerald-600 transition">Agendar</a>
           </div>
         </article>
+
       </div>
     </div>
   </section>
-
 
   <!-- NOSSOS PROFISSIONAIS -->
   <section id="profissionais" class="py-16 bg-gray-50">
@@ -565,8 +560,8 @@
               <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2V9.5A3.5 3.5 0 0114 6h3v3h-2c-.6 0-1 .4-1 1V12h3l-.5 3H14v7A10 10 0 0022 12z"/></svg>
             </a>
             <!-- YouTube -->
-            <a href="#" aria-label="YouTube" class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 transition">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+            <!-- <a href="#" aria-label="YouTube" class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 transition">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg> -->
             </a>
           </div>
         </div>
@@ -574,7 +569,7 @@
 
       <!-- Linha -->
       <div class="border-t border-white/15 mt-12 pt-6 pb-10 text-sm flex flex-col md:flex-row items-center justify-between gap-3">
-        <p class="text-white/70">© <span id="year"></span> Saúde Med. Todos os direitos reservados.</p>
+        <p class="text-white/70">© <span id="year"></span> 2017 - Saúde Med. Todos os direitos reservados.</p>
         <div class="text-white/60">
           CNPJ: 00.000.000/0000-00
         </div>
@@ -582,10 +577,9 @@
     </div>
   </footer>
 
-<script>
-  // ano automático no footer (sem depender do main.js)
+<!-- <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+</script> -->
 
 
   <!-- Botão flutuante do WhatsApp -->
